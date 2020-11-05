@@ -16,11 +16,11 @@
     <header id="header">
         <a href="#home" class="logo">MoSharp</a>
         <ul>
-            <li> <a href="#home" class="active">Home</a> </li>
-            <li> <a href="#cursos">Cursos</a> </li>
-            <li> <a href="#productos">Productos</a> </li>
-            <li> <a href="#colab">Colaboracciones</a> </li>
-            <li> <a href="#about-us">Sobre nosotros</a> </li>
+            <li> <a href="#home" class="active"  onclick="toggle()" >Home</a> <li>
+            <li> <a href="#cursos" onclick="toggle()" >Cursos</a> </li>
+            <li> <a href="#productos" onclick="toggle()" >Productos</a> </li>
+            <li> <a href="#colab" onclick="toggle()" >Colaboracciones</a> </li>
+            <li> <a href="#about-us" onclick="toggle()" >Sobre nosotros</a> </li>
         </ul>
         <link rel="stylesheet" href="js/main.js">
 
@@ -70,7 +70,15 @@
             
         </div>
         <img src="img/About-us.jpg" alt="Working-img" class="imagen">
-    </section>
+
+</section>
+    <script type="text/javascript">
+        function toggle()
+    {
+            var header = document.getElementById("header")
+            header.classList.toggle('active')
+     }
+</script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/main.js"></script>
